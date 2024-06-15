@@ -1,4 +1,4 @@
-# Ecowiser - Notekeeper Application
+# Ecowiser - Notekeeper Application 🌱
 
 ## Overview
 
