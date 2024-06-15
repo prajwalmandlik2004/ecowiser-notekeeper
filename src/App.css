@@ -1,38 +1,145 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding: 10px 20px;
+  background-color: rgb(228, 237, 231);
+  color: black;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.navbar h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.search-bar {
+  padding: 5px;
+  margin-right: 10px;
+  margin-top: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+}
+
+.refresh-button {
+  background: none;
+  border: none;
   color: white;
+  font-size: 20px;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.refresh-button:hover {
+  color: #ddd;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.note-form {
+  max-width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 0 10px rgb(228, 237, 231);
+}
+
+.note-form input,
+.note-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.note-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  background-color: rgb(14, 192, 14);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.note-form button:hover {
+  background-color: rgb(14, 192, 14);
+}
+
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  gap: 10px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 20px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.pagination button {
+  padding: 10px 15px;
+  margin: 0 5px;
+  border: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #555;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
   }
-  to {
-    transform: rotate(360deg);
+
+  .navbar h1 {
+    font-size: 20px;
+  }
+
+  .search-bar {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .note-form {
+    margin-left: 0;
   }
 }
+

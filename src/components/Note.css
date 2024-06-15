@@ -1,0 +1,53 @@
+.note {
+    border: 1px solid #c7f1d3;
+    padding: 16px;
+    margin: 8px;
+    border-radius: 5px;
+    background-color: #c0f2ce;
+
+    @media (max-width: 768px) {
+        padding: 12px;
+        margin: 6px;
+    }
+}
+
+.note h2 {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    margin: 0 0 8px;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+
+.note p {
+    display: flex;
+    margin: 0 0 12px;
+    line-height: 1.2;
+}
+
+.note button {
+    margin-right: 8px;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 0.9rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+
+    &.edit {
+        background-color: rgb(14, 192, 14);
+        color: #fff;
+    }
+
+    &.delete {
+        background-color: #f44336;
+        color: #fff;
+    }
+
+    &:focus {
+        outline: none;
+    }
+}
