@@ -13,6 +13,13 @@ Ecowiser is a powerful and user-friendly notekeeper application built using Reac
 - **React Toast:** Notifications for successful operations using React Toast.
 - **Firebase Integration:** All CRUD operations are powered by Firebase, ensuring data persistence and real-time updates.
 
+## Technologies Used
+
+- **React.js:** Front-end library for building the user interface.
+- **Firebase:** Backend-as-a-Service for real-time database and authentication.
+- **CSS:** Styling the application
+
+
 ## Installation
 
 1. **Clone the repository:**
